@@ -1,10 +1,14 @@
+require('dotenv').config();
 const express = require("express");
 const path = require("path");
 const PORT = process.env.PORT || 3001;
 const app = express();
 const routes = require('./routes');
-const password = require("./.env");
-const username = require("./.env")
+
+// check for ATLAS_PASSWORD and ATLAS_PASSWORD env variables
+// fallback to require if vars are not found
+const password = process.env.ATLAS_PASSWORD || require("./.env");
+const username = process.env.ATLAS_USERNAME || require("./.env");
 
 const mongoose = require("mongoose");
 
