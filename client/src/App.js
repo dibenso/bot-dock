@@ -16,13 +16,13 @@ class App extends Component {
       <BrowserRouter>
         <NavBar />
         <Switch>
-          <Route path="/" component={Home} />
+          <Route exact path="/" component={Home} />
         </Switch>
         <Switch>
-          <Route path="/Directory" component={Directory} />
+          <Route exact path="/Directory" component={Directory} />
         </Switch>
         <Switch>
-          <Route path="/Contact" component={Contact} />
+          <Route exact path="/Contact" component={Contact} />
         </Switch>
         <AmplifySignOut />
       </BrowserRouter>
