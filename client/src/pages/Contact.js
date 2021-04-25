@@ -36,7 +36,14 @@ class Contact extends React.Component {
                   <Formik
                     initialValues={{ firstName: "", lastName: "", email: ""}}
                     validationSchema={ContactSchema}
-                    onSubmit={values => console.log(values)}
+                    onSubmit={async values => {
+                      /* make API request here:
+                      
+                      const response = await fetch(`/user/${userId}`, { method: "PUT", body: JSON.stringify(values) })
+                      const data = await response.json()
+                      */
+                      console.log(values)
+                    }}
                   >
                     {({ values, errors, touched, handleChange, handleBlur, handleSubmit, isSubmitting }) => (
                       <form onSubmit={handleSubmit}>
