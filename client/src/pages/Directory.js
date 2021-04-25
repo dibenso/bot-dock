@@ -54,7 +54,7 @@ function Index() {
                             <div className="container mx-auto h-64">
                                 <div className="bg-white w-full h-full rounded shadow">
                                     <div className="grid grid-cols-2 gap-4">
-                                        <div className="border-solid border-4">
+                                        <div className="border-solid border-4 h-48 overflow-scroll">
                                             <p className="text-sm text-gray-600" onClick={() => setSelectedBot(0)}>
                                                 Amazon X-Box Search Bot{" "}
                                             </p>
@@ -72,7 +72,7 @@ function Index() {
                                                     <p>Description</p>
                                                     <div className="text-center">
                                                         <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-16">
-                                                        Button
+                                                            Button
                                                         </button>
                                                     </div>
                                                 </div>
